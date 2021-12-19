@@ -1,1 +1,18 @@
-theme: jekyll-theme-cayman
+# Setup
+title:        SemperFi Anti-spoofing GPS Receiver for UAVs
+tagline:      A responsive theme for your project on GitHub Pages
+baseurl:      ""
+paginate:     1
+locale:       "en"
+
+# About/contact
+author:
+  name:       Harshad Sathaye
+  url:        https://harshadsathaye.com 
+
+# Gems
+gems:
+  - jekyll-paginate
+
+#Others
+markdown: kramdown
