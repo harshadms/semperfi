@@ -1,0 +1,22 @@
+-- SPDX-License-Identifier: BSD-1-Clause
+-- SPDX-FileCopyrightText: (c) 2003, 2004 Lev Walkin <vlm@lionet.info>. All rights reserved.
+SUPL-POS DEFINITIONS AUTOMATIC TAGS ::=
+BEGIN
+
+EXPORTS SUPLPOS;
+
+IMPORTS Velocity
+          FROM ULP-Components;
+
+SUPLPOS ::= SEQUENCE {
+  posPayLoad  PosPayLoad,
+  velocity    Velocity OPTIONAL,
+  ...}
+
+PosPayLoad ::= CHOICE {
+  tia801payload  OCTET STRING(SIZE (1..8192)),
+  rrcPayload     OCTET STRING(SIZE (1..8192)),
+  rrlpPayload    OCTET STRING(SIZE (1..8192)),
+  ...}
+
+END
